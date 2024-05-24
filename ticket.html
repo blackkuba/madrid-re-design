@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid Tickets</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+
+    <header>
+        <img id="main_logo" src="assets/madrid logo dark.png" alt="madrid logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="ticket.html">Tickets</a></li>
+                <li><a href="readmore.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="months-bar">
+            <button class="month-btn" data-month="jan">Jan</button>
+            <button class="month-btn" data-month="feb">Feb</button>
+            <button class="month-btn" data-month="mar">Mar</button>
+            <button class="month-btn" data-month="apr">Apr</button>
+            <button class="month-btn" data-month="may">May</button>
+            <button class="month-btn" data-month="jun">Jun</button>
+            <button class="month-btn" data-month="jul">Jul</button>
+            <button class="month-btn" data-month="aug">Aug</button>
+            <button class="month-btn" data-month="sep">Sep</button>
+            <button class="month-btn" data-month="oct">Oct</button>
+            <button class="month-btn" data-month="nov">Nov</button>
+            <button class="month-btn" data-month="dec">Dec</button>
+        </div>
+        <div class="tickets-display">
+            <div class="tickets" data-month="jan">
+                <div class="ticket" data-price="100">
+                    <h3>Real Madrid vs Barcelona</h3>
+                    <p>Date: January 15, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+                <div class="ticket" data-price="80">
+                    <h3>Real Madrid vs Atletico Madrid</h3>
+                    <p>Date: January 22, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="feb">
+                <div class="ticket" data-price="70">
+                    <h3>Real Madrid vs Valencia</h3>
+                    <p>Date: February 10, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="mar">
+                <div class="ticket" data-price="60">
+                    <h3>Real Madrid vs Sevilla</h3>
+                    <p>Date: March 5, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="apr">
+                <div class="ticket" data-price="60">
+                    <h3>Real Madrid vs Real Betis</h3>
+                    <p>Date: April 12, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="may">
+                <div class="ticket" data-price="80">
+                    <h3>Real Madrid vs Villarreal</h3>
+                    <p>Date: May 19, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="jun">
+                <p class="no-tickets">No tickets available for June</p>
+            </div>
+            <div class="tickets" data-month="jul">
+                <p class="no-tickets">No tickets available for July</p>
+            </div>
+            <div class="tickets" data-month="aug">
+                <div class="ticket" data-price="70">
+                    <h3>Real Madrid vs Espanyol</h3>
+                    <p>Date: August 21, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="sep">
+                <div class="ticket" data-price="70">
+                    <h3>Real Madrid vs Granada</h3>
+                    <p>Date: September 18, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="oct">
+                <div class="ticket" data-price="60">
+                    <h3>Real Madrid vs Athletic Bilbao</h3>
+                    <p>Date: October 9, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="nov">
+                <div class="ticket" data-price="60">
+                    <h3>Real Madrid vs Celta Vigo</h3>
+                    <p>Date: November 14, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+            <div class="tickets" data-month="dec">
+                <div class="ticket" data-price="80">
+                    <h3>Real Madrid vs Real Sociedad</h3>
+                    <p>Date: December 19, 2024</p>
+                    <p>Time: 20:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ticket-form-container" id="ticket-form-container">
+        <div class="ticket-form-wrapper">
+            <div class="ticket-form">
+                <h2>Buy Ticket</h2>
+                <form id="buy-ticket-form">
+                    <label for="game">Game</label>
+                    <input type="text" id="game" name="game" readonly>
+                    <label for="date">Date</label>
+                    <input type="text" id="date" name="date" readonly>
+                    <label for="time">Time</label>
+                    <input type="text" id="time" name="time" readonly>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10">
+                    <label for="section">Section</label>
+                    <select id="section" name="section">
+                        <option value="north">North Stand</option>
+                        <option value="south">South Stand</option>
+                        <option value="east">East Stand</option>
+                        <option value="west">West Stand</option>
+                    </select>
+                    <label for="price">Price</label>
+                    <input type="text" id="price" name="price" readonly>
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                    <div class="button-group">
+                        <button type="submit">Buy</button>
+                        <button type="button" id="cancel-button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="stadium-guide">
+                <h2>Stadium Guide</h2>
+                <img src="assets/rm-bernabeu_zonas_3840_en.png" alt="Stadium Seating Guide">
+                <p>Select a section to see where you'll be seated.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="ticket.js"></script>
+</body>
+</html>

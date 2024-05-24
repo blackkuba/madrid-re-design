@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lalezar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #222222;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background-color: #1B1B1B;
+}
+
+#main_logo {
+    width: 8vw;
+    max-width: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vmax;
+}
+
+main {
+    padding: 5vh 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2vmax;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: #3f3f3f;
+    border-radius: 0.5vmax;
+    border: white 2px solid;
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.item_container img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    transition: transform 0.2s;
+}
+
+.grid-item:hover img {
+    transform: scale(0.9);
+}
+
+.descp_container, .price_ava {
+    margin-top: 1rem;
+}
+
+.price_container, .avaibale {
+    font-size: 1rem;
+}
+
+.avaibale {
+    color: rgb(191, 151, 255);
+    font-weight: 500;
+}
+
+.item7 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+    nav li a {
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 2vh 5%;
+    }
+    .grid-container {
+        gap: 1rem;
+    }
+}

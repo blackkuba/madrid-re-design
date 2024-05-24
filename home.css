@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lalezar&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+}
+
+main{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.first_section{
+    background-image: url(assets/bacground.png);
+    width: 100%;
+    height: 88vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 19vh;
+}
+
+nav{
+
+    width: 67vw;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#main_logo{
+    width: 8vw;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1vmax;
+}
+
+.first_section_content{
+    display: flex;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding-left: 3vmax;
+    display: flex;
+}
+
+#intro{
+    color: white;
+    font-family: "Cabin Condensed", sans-serif;
+    font-size: 1vmax;
+    margin-bottom: 4vh;
+    background-color: #583282;
+    width: 7vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#headline{
+    font-family: "Lalezar", system-ui;
+    color: white;
+    font-size: 3.3vmax;
+    line-height: 1.05;
+    margin-bottom: 2vh;
+}
+
+#text{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9vmax;
+    margin-bottom: 2vh;
+}
+
+#readmore{
+    color: #583282;
+    text-decoration: none;
+    font-family: "Lalezar", system-ui;
+    font-size: 1vmax;
+}
+
+.dynamic_image{
+    width: 60vw;
+}
+
+#ronaldo_img{
+    height: 69vh;
+}
+
+.secondary_section{
+    width: 75vw;
+    height: 20vh;
+    background-color: #1B1B1B;
+    display: flex;
+}
+
+.last_match{
+    width: 30vw;
+    height: 16vh;
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.lm_title, .lm_desc {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7vmax;
+    text-align: center;
+}
+
+.lm_result{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vmax;
+    font-weight: 500;
+    color: white;
+}
+
+.lm_logo > img{
+    height: 8vh;
+    width: 3.4vw;
+}
+
+.lm_rep{
+    color:#583282;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7vmax;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4vw;
+}
+
+.lm_rep > img{
+    width: 0.7vw;
+    height: 1.5vh;
+}
+
+.devider{
+    display: none;
+}
+
+.devider > img{
+    width: 5vw;
+    height: 10vh;
+}
+
+.next_match{
+    width: 30vw;
+    height: 16vh;
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.shop{
+    width: 30vw;
+    height: 20vh;
+    background: rgb(27,27,27);
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    justify-content: space-around;
+}
+
+.shop_info{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.shop_info > img{
+    width: 3vw;
+    height: 5vh;
+}
+
+.shop_headline{
+    color: white;
+    font-size: 0.9vmax;
+}
+
+.gray_text{
+    color: #6C6C6C;
+    font-size: 0.7vmax;
+}
+
+.white_text{
+    color: white;
+    font-size: 0.7vmax;
+}
+
+.visit_shop{
+    color: #583282;
+    font-size: 0.7vmax;
+    display: flex;
+    gap: 0.4vw;
+}
+
+.visit_shop > a {
+    text-decoration: none;
+    list-style: none;
+    color: #583282;
+} 
+
+.visit_shop > img{
+    width: 0.7vw;
+    height: 1.5vh;
+}
+
+.product{
+    height: 19vh;
+    width: 8vw;
+}
+
+aside{
+    width: 25vw;
+    height: 108vh;
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.matches {
+    width: 20vw;
+    height: 30vh;
+    background: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-size: 1vmax;
+}
+
+h3{
+    font-weight: lighter;
+    margin-top: 1vh;
+}
+
+.match_result{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(88,50,130);
+    background: linear-gradient(90deg, rgba(88,50,130,1) 0%, rgba(0,0,0,1) 100%);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 80%;
+    height: 5vh;
+}
+
+.match_result > img{
+    width: 1.3vw;
+}
+
+.team{
+    width: 25%;
+    text-align: center;
+}
+
+.score{
+    width: 10%;
+    text-align: center;
+}
+
+.view_all_results{
+    width: 20vw;
+    height: 5vh;
+    background-color: #262626;
+    margin-top: 1vh;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-weight:100;
+    font-size: 1vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+}
+
+.league_tables{
+    margin-top: 5vh;
+}
+
+/* bomba */
+
+.container > h3 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-family: "Lalezar", system-ui;
+    font-size: 1vmax;
+}
+
+.container {
+    background: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    margin-bottom: 1vh;
+    border-collapse: collapse;
+    width: 18vw;
+}
+
+thead{
+    background: #262626;
+}
+
+th {
+    text-align: left;
+    color: rgb(122, 122, 122);
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.5vmax;
+}
+
+td {
+    text-align: left;
+    padding: 0.5vmax;
+    font-size: 1vmax;
+    color: white;
+    font-family: "Lalezar", system-ui;
+}
+
+tbody > tr{
+    background: rgb(88,50,130);
+    background: linear-gradient(90deg, rgba(88,50,130,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/* bomba */
+
+.league_result{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(88,50,130);
+    background: linear-gradient(90deg, rgba(88,50,130,1) 0%, rgba(0,0,0,1) 100%);
+    margin-top: 1vh;
+    width: 80%;
+    height: 3vh;
+}
+
+.view_all_results > img{
+    width: 1.5vw;
+    height: 3vh;
+}
+
+.tr-spacer{
+    height: 1vh;
+}
+
+
+@media (max-width: 730px) {
+    .first_section{
+        background-image: url(assets/bacground.png);
+        width: 100%; 
+        height: 88vh; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+
+    ul{
+
+        display: flex;
+        justify-content: space-around;
+        width: 60vw;
+
+    }
+
+    .first_section_content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+    main{
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    aside{
+        display: none;
+    }
+
+    #ronaldo_img {
+        display: none;
+    }
+
+    .secondary_section {
+        flex-direction: column;
+        width: 100%; 
+        padding: 1rem; 
+        display: flex;
+    }
+
+    .last_match, .next_match, .shop {
+        width: 100%; 
+    }
+
+    .lm_title, .lm_desc, .lm_rep, .visit_shop, .shop_headline, .gray_text, .white_text, li > a {
+        font-size: 2.4vmax;  
+    }
+
+    #text, #readmore {
+        font-size: 2vmax;  
+    }
+
+    #headline{
+        font-size: 4.5vmax;
+    }
+
+    #intro{
+        font-size: 1.2vmax;
+    }
+}
